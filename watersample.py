@@ -4,6 +4,12 @@ class WaterSample(Sample):
         super().__init__(name, location, ph_value)
         self.salinity = salinity
 
+    def set_salinity(self, amount):
+        if amount < 0:
+            print("Salinity cannot be below 0")
+        else:
+            self.salinity = amount
+
     def display_info(self):
         super().display_info()
         print(f"Salinity: {self.salinity}")
