@@ -9,9 +9,5 @@ class Sample:
         print(f"Location: {self.location}")
         print(f"pH Value: {self.ph_value}")
 
-sample1 = Sample("Water Sample A", "Berkeley Marina", 7.2)
-sample2 = Sample("Soil Sample A", "Joaquin Miller Park", 6.5)
-sample1.display_info()
-print()
-sample2.display_info()
+
 
