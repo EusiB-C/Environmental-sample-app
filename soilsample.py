@@ -9,8 +9,12 @@ class SoilSample(Sample):
             print("Lead content cannot be below 0")
         else:
             self.pb_value = amount
+    
 
     def display_info(self):
         super().display_info()
-        print(f"Lead Content: {self.pb_value}")
+        print(f"Lead Content: {self.pb_value} ppm")
+        
+        if self.pb_value >= 80:
+            print("Warning: Lead content exceeds safe levels!")
 

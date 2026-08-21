@@ -12,5 +12,5 @@ class WaterSample(Sample):
 
     def display_info(self):
         super().display_info()
-        print(f"Salinity: {self.salinity}")
+        print(f"Salinity: {self.salinity} mg/L")
 

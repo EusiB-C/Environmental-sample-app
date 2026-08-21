@@ -1,13 +1,32 @@
 from soilsample import SoilSample
 from watersample import WaterSample
 
-sample1 = WaterSample("Water Sample A", "Berkeley Marina", 7.2, 0.5)
-sample2 = SoilSample("Soil Sample A", "Joaquin Miller Park", 6.5, 0.3)
-sample3 = WaterSample("Water Sample B", "Lake Merritt", 8.1, 0.7)
-sample4 = SoilSample("Soil Sample B", "Bella Vista Park", 5.8, 0.2)
 
-samples = [sample1, sample2, sample3, sample4]
 
-for sample in samples:
-    sample.display_info()
-    print()
+
+class Lab:
+    def __init__(self):
+        self.samples = []
+
+    def add_sample(self, sample):
+        self.samples.append(sample)
+
+    def display_all_samples(self):
+        for sample in self.samples:
+            sample.display_info()
+            print()
+    
+    def sample_count(self):
+        return len(self.samples)
+
+
+    def flagged_count(self):
+        count = 0
+
+        for sample in self.samples:
+            if isinstance(sample, SoilSample) and sample.pb_value >= 80:
+                count += 1
+
+        return count
+
+    
