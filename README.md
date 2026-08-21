@@ -1,1 +1,1 @@
-This project is an app that shows data from hypothetical environmental samples, like a soil sample's lead content or a water sample's salinity
+This project is an app that shows data from hypothetical environmental samples, like a soil sample's lead content or a water sample's salinity. You can add your own "sample" and view data from it and others you create.
