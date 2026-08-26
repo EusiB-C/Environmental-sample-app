@@ -1,7 +1,7 @@
 from sample import Sample
-class WaterSample(Sample):
+class WaterSample(Sample): #creates water samples as a subclass of Sample, adding salinity as an additional attribute
     def __init__(self, name, location, ph_value, salinity):
-        super().__init__(name, location, ph_value)
+        super().__init__(name, location, ph_value) #super() calls the parent class Sample to use name, location, and ph_value attributes
         self.salinity = salinity
 
     def set_salinity(self, amount):

@@ -1,5 +1,5 @@
 class Sample:
-    def __init__(self, name, location, ph_value):
+    def __init__(self, name, location, ph_value): #creates a sample object with name, location, and pH value
         self.name = name
         self.location = location
         self.ph_value = ph_value
